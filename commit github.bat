@@ -5,5 +5,5 @@ cls
 set /p msg="Enter message: "
 
 git commit -m "%msg%"
-git push -u origin master
+git push -u origin main
 pause
