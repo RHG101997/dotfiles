@@ -8,6 +8,8 @@
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set nu
+set ignorecase
+set smartcase
 set scrolloff=8
 set relativenumber
 set guicursor=
@@ -20,7 +22,7 @@ set incsearch
 set splitbelow splitright
 set autoindent
 set pastetoggle=<f5> "Helps to paste keep off if not using"
-
+"set clipboard=unnamed
 
 "Plugins using Plug
 call plug#begin('~/.config.nvim/autoload/plugged')
