@@ -21,19 +21,25 @@ set noerrorbells
 set incsearch
 set splitbelow splitright
 set autoindent
-set pastetoggle=<f5> "Helps to paste keep off if not using"
+set list lcs=tab:\|\ 
 "set clipboard=unnamed
+
+" Toggle using Function Keys
+set pastetoggle=<f5> 
+nnoremap <F7> :setlocal spell!  spell?<CR>
+
+
+" Match tag <HTML,XML,etc>
+runtime macros/matchit.vim
 
 "Plugins using Plug
 call plug#begin('~/.config.nvim/autoload/plugged')
-
 	Plug 'sheerun/vim-polyglot'
 	Plug 'scrooloose/NERDTree'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'vim-airline/vim-airline'            
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'morhetz/gruvbox'
-
 call plug#end()
 
 
